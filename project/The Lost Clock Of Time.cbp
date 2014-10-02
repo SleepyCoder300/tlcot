@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="The Lost Clock Of Time" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../The Lost Clock Of Time - Debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../The Lost Clock Of Time" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DALLEGRO_STATIC_LINK" />
+			<Add directory="../include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add library="allegro-5.0.10-static-mt" />
+			<Add library="allegro_acodec-5.0.10-static-mt" />
+			<Add library="allegro_audio-5.0.10-static-mt" />
+			<Add library="openal-1.14-static-mt" />
+			<Add library="vorbisfile-1.3.2-static-mt" />
+			<Add library="vorbis-1.3.2-static-mt" />
+			<Add library="allegro_color-5.0.10-static-mt" />
+			<Add library="allegro_dialog-5.0.10-static-mt" />
+			<Add library="allegro_font-5.0.10-static-mt" />
+			<Add library="allegro_image-5.0.10-static-mt" />
+			<Add library="allegro_memfile-5.0.10-static-mt" />
+			<Add library="allegro_physfs-5.0.10-static-mt" />
+			<Add library="allegro_primitives-5.0.10-static-mt" />
+			<Add library="allegro_ttf-5.0.10-static-mt" />
+			<Add library="dumb-0.9.3-static-mt" />
+			<Add library="FLAC-1.2.1-static-mt" />
+			<Add library="freetype-2.4.8-static-mt" />
+			<Add library="ogg-1.2.1-static-mt" />
+			<Add library="zlib-1.2.5-static-mt" />
+			<Add library="gdiplus" />
+			<Add library="uuid" />
+			<Add library="kernel32" />
+			<Add library="winmm" />
+			<Add library="psapi" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="user32" />
+			<Add library="comdlg32" />
+			<Add library="gdi32" />
+			<Add library="shell32" />
+			<Add library="ole32" />
+			<Add library="advapi32" />
+			<Add library="shlwapi" />
+			<Add library="ws2_32" />
+		</Linker>
+		<Unit filename="../include/engine/config.h" />
+		<Unit filename="../include/engine/font.h" />
+		<Unit filename="../include/engine/graphics.h" />
+		<Unit filename="../include/engine/input.h" />
+		<Unit filename="../include/engine/sound.h" />
+		<Unit filename="../include/fwd/engine/config.h" />
+		<Unit filename="../include/fwd/engine/font.h" />
+		<Unit filename="../include/fwd/engine/graphics.h" />
+		<Unit filename="../include/fwd/engine/input.h" />
+		<Unit filename="../include/fwd/engine/sound.h" />
+		<Unit filename="../include/global.h" />
+		<Unit filename="../src/engine/config.cpp" />
+		<Unit filename="../src/engine/font.cpp" />
+		<Unit filename="../src/engine/graphics.cpp" />
+		<Unit filename="../src/engine/input.cpp" />
+		<Unit filename="../src/engine/sound.cpp" />
+		<Unit filename="../src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
